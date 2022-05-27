@@ -5,7 +5,7 @@ This repository contains code implementation of different compression method whi
 In this project we implemented, compare and combine several compression ideas.
 We work with raw projections (images caught by CT detector), which then are used for human body reconstruction. Our goal is to compress projection storage.
 
-We have implemented the folowing methods:
+We have implemented the following methods:
 1) VQ-VAE image compression applied to each image
 2) Deep video compression
 3) ConvLSTM frame prediction
