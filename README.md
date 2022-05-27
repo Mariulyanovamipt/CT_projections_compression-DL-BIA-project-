@@ -40,3 +40,9 @@ Size(Mb)| Model type    | PSNR    | SSIM    | HaarPSI | VSI     | Loss(mse)
 4 Mb    | siren         | 22.12   | 0.8     | 0.63    | 0.94    | 0.03
 4 Mb    | siren_cascade | 21.87   | 0.82    | 0.63    | 0.94    | 0.03
 19 Mb   | siren         | 21.97   | 0.84    | 0.6     | 0.94    | 0.03
+
+## Unet
+For this part we used code for architecture from DL HW2 with our own dataloader, target task, loss functions (MSE, HaarPSI and VSI) and metrics
+
+## OpenDVC 
+Reference code: https://github.com/RenYang-home/OpenDVC. Added dataloader, changed data processing and saving, written additional Discriminator  architecture and GAN losses on top of proposed experiments and losses, which increased score.
