@@ -14,7 +14,7 @@ We have implemented the following methods:
 
 Related code coud be found in corresponding folder
 
-#Dataset
+# Dataset
 
 We worked with CT projections dataset from https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758026. Library for data and metadata extraction is discribed in First_sight_on_dataset.jpynb file. 
 
