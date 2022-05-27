@@ -18,7 +18,12 @@ Related code could be found in corresponding folders.
 
 We worked with CT projections dataset from https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758026. Library for data and metadata extraction is discribed in First_sight_on_dataset.jpynb file. 
 
-Algorythm for reconstruction is implemented using TIGRE library https://tigre.readthedocs.io/en/latest/
+Algorithm for reconstruction is implemented using TIGRE library https://tigre.readthedocs.io/en/latest/ in file M_colab_Helical_reconstruction.ipynb.
+
+## Metrics 
+
+We have used typical for image comparison metrics -- PSNR and SSIM. In addition we measured two metrcis, which show themself good both on MRI data and on natural images accordicg to estimation of the cardiologists, they are HaarPSI (based on Haar Wavelet decomposition and perception comparison of images based on comparison of coefficients in this decomposition)  and VSI (metric combining several images comparison techniques, including Fourrier domain, graients etc). All metrics are imported from the library https://github.com/photosynthesis-team/piq and realised in file metric.py for CT projection tensor of shape (Num_projections, H, W).
+
 ## MLP neural image representation
 We use SIREN model (https://arxiv.org/abs/2006.09661) to compress image data.
 Here is the model architecture:
